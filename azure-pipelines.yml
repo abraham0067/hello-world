@@ -5,12 +5,17 @@
 
 trigger:
 - master
+variables:
+  resourceGroup: 'microservices'
+  containerName: 'hello-world-pipeline-0'
+  imageName: 'devs4j/hello-world-pipeline-0'
+  dnsName: 'hello-world-0-12345555'
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello, world Perro!
   displayName: 'Run a one-line script'
 
 - script: |
