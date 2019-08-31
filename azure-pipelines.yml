@@ -53,7 +53,7 @@ steps:
 
 - task: AzureCLI@1
   inputs:
-    connectedServiceNameARM: 'abraham0067'
+    connectedServiceNameARM: 'docker-hub'
     scriptLocation: 'inlineScript'
     inlineScript: |
       az container delete --resource-group $(resourceGroup) --name $(containerName) --yes
